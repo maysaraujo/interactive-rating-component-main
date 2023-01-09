@@ -1,0 +1,159 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rating-start {
+  background-color: var(--dark-blue);
+  width: 300px;
+  height: 340px;
+
+  border-radius: 20px;
+  padding: 25px;
+}
+
+.icon-star {
+  background-color: var(--medium-grey);
+  border-radius: 50%;
+  padding: 10px;
+}
+
+main h2 {
+  padding-top: 10px;
+  padding-bottom: 15px;
+  color: var(--white);
+}
+
+main p {
+  padding-bottom: 25px;
+  color: var(--light-grey);
+}
+
+.rating-button {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn-item {
+  border: none;
+  background-color: var(--medium-grey);
+  color: var(--light-grey);
+
+  border-radius: 50%;
+  padding: 13px 19px 13px 18px;
+  cursor: pointer;
+}
+
+.btn-item:hover {
+  background-color: var(--light-grey);
+  color: var(--white);
+}
+
+.btn-container {
+  padding-top: 20px;
+}
+
+.btn-container button {
+  background-color: var(--orange);
+  color: var(--white);
+  text-transform: uppercase;
+
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+
+  width: 100%;
+  height: 6vh;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.btn-container button:hover {
+  background-color: var(--white);
+  color: var(--orange);
+}
+
+.rating-state {
+  display: none;
+}
+
+.rating-state-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.selected {
+  background-color: var(--medium-grey);
+  color: var(--orange);
+  text-align: center;
+  font-size: 11px;
+
+  width: 150px;
+  height: 4vh;
+  padding: 8px;
+
+  border-radius: 30px;
+  margin-top: 20px;
+}
+
+.rating-state-text h2 {
+  color: var(--white);
+  margin-top: 20px;
+}
+
+.rating-state-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.rating-state-text .thanks {
+  color: var(--light-grey);
+  text-align: center;
+  margin-top: 20px;
+  font-size: 12px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: var(--white);
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 920px) {
+  .btn-item:hover {
+    background-color: var(--orange);
+    color: var(--white);
+  }
+
+  .btn-item:focus {
+    background-color: var(--light-grey);
+    color: var(--white);
+  }
+
+  .selected {
+    padding: 6px;
+  }
+
+  @media (min-width: 1500px) {
+    .btn-container button {
+      height: 5.5vh;
+    }
+  }
+
+  @media (min-width: 2000px) {
+    .btn-container button {
+      height: 4vh;
+    }
+  }
+}
