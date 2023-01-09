@@ -130,6 +130,30 @@ main p {
   color: hsl(228, 45%, 44%);
 }
 
+@media (min-width: 393px) {
+  .btn-container button {
+    height: 5vh;
+  }
+}
+
+@media (min-width: 412px) {
+  .btn-container button {
+    height: 4.5vh;
+  }
+}
+
+@media (min-width: 820px) {
+  .btn-container button {
+    height: 3.8vh;
+  }
+}
+
+@media (min-width: 912px) {
+  .btn-container button {
+    height: 3vh;
+  }
+}
+
 @media (min-width: 920px) {
   .btn-item:hover {
     background-color: var(--orange);
@@ -143,6 +167,12 @@ main p {
 
   .selected {
     padding: 6px;
+  }
+
+  @media (min-width: 1280px) {
+    .btn-container button {
+      height: 5vh;
+    }
   }
 
   @media (min-width: 1500px) {
